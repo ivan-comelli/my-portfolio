@@ -1,0 +1,221 @@
+
+.intro {
+  height: 100vh;
+  background: #c4cbc7;
+}
+
+.mask {
+  height: 100vh;
+  width: 100%;
+  overflow: hidden;
+  position: absolute;
+  display: flex;
+  justify-content: flex-end;
+}
+
+.portrait { 
+  width: 80em;
+  height: 120em;
+  margin-top: -10em;
+  object-fit: cover;
+}
+
+.intro .selected-work {
+  position: relative;
+  width: fit-content;
+  margin-top: -1px;
+  font-family: "Helvetica Neue-Regular", Helvetica;
+  font-weight: 400;
+  color: #15376059;
+  font-size: 30px;
+  letter-spacing: 2px;
+  line-height: normal;
+  white-space: nowrap;
+}
+
+.intro .your-name {
+  position: relative;
+  width: fit-content;
+  font-family: "Helvetica Neue-Bold", Helvetica;
+  font-weight: 700;
+  color: #002452;
+  font-size: 160px;
+  letter-spacing: 0;
+  line-height: 160px;
+  white-space: nowrap;
+}
+
+.intro .product-design-portf {
+  position: relative;
+  width: fit-content;
+  font-family: "Helvetica Neue-Regular", Helvetica;
+  font-weight: 400;
+  color: #002452;
+  font-size: 60px;
+  letter-spacing: 0;
+  line-height: 60px;
+  white-space: nowrap;
+}
+.frame {
+  display: flex;
+  height: 100%;
+  width: 100%;
+  clip-path: polygon(0 0, 0% 100%, 100% 100%);
+  background: rgba(255, 255, 255, 0.45);
+  box-shadow: 0 8px 32px 0 rgba(31, 38, 135, 0.37);
+  backdrop-filter: blur(10px);
+  -webkit-backdrop-filter: blur(20px);
+  border-radius: 10px;
+  border: 1px solid rgba(255, 255, 255, 0.18);
+  align-items: flex-start;
+  justify-content: flex-end;
+  flex-direction: column;
+}
+
+.frame .title-header {
+  padding: 5em;
+}
+.element-project {
+  position: relative;
+  width: 1920px;
+  height: 1020px;
+  background-color: #ffffff;
+  overflow: hidden;
+}
+
+.element-project .overlap {
+  position: relative;
+  top: -1px;
+  left: 80px;
+  width: 1841px;
+  height: 1082px;
+}
+
+.element-project .description {
+  position: absolute;
+  width: 560px;
+  height: 62px;
+  top: 484px;
+  left: 0;
+}
+
+.element-project .what-platforms-was-t {
+  position: absolute;
+  width: 560px;
+  top: 32px;
+  left: 0;
+  font-family: "Helvetica Neue-Regular", Helvetica;
+  font-weight: 400;
+  color: #53595f;
+  font-size: 22px;
+  letter-spacing: 0;
+  line-height: 29px;
+}
+
+.element-project .text-wrapper {
+  position: absolute;
+  top: -1px;
+  left: 0;
+  font-family: "Helvetica Neue-Bold", Helvetica;
+  font-weight: 700;
+  color: #002452;
+  font-size: 21px;
+  letter-spacing: 3px;
+  line-height: normal;
+  white-space: nowrap;
+}
+
+.element-project .div {
+  height: 62px;
+  top: 584px;
+  left: 0;
+  position: absolute;
+  width: 560px;
+}
+
+.element-project .description-2 {
+  height: 250px;
+  top: 683px;
+  left: 2px;
+  position: absolute;
+  width: 560px;
+}
+
+.element-project .in-sentences-d {
+  position: absolute;
+  width: 560px;
+  top: 34px;
+  left: 0;
+  font-family: "Helvetica Neue-Regular", Helvetica;
+  font-weight: 400;
+  color: #53595f;
+  font-size: 22px;
+  letter-spacing: 0;
+  line-height: 29px;
+}
+
+.element-project .longer-description-t {
+  position: absolute;
+  width: 560px;
+  top: 262px;
+  left: 0;
+  font-family: "Helvetica Neue-Light", Helvetica;
+  font-weight: 300;
+  color: #52575e;
+  font-size: 34px;
+  letter-spacing: 0;
+  line-height: 50px;
+}
+
+.element-project .overlap-group {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 1841px;
+  height: 1082px;
+}
+
+.element-project .line {
+  position: absolute;
+  width: 601px;
+  height: 1px;
+  top: 1022px;
+  left: 0;
+}
+
+.element-project .rectangle {
+  position: absolute;
+  width: 1242px;
+  height: 1082px;
+  top: 0;
+  left: 599px;
+  background-color: #f4f4f4;
+}
+
+.element-project .img {
+  position: absolute;
+  width: 734px;
+  height: 549px;
+  top: 276px;
+  left: 880px;
+}
+
+.element-project .three-word-problem-d {
+  position: absolute;
+  width: 560px;
+  top: 119px;
+  left: 0;
+  font-family: "Helvetica Neue-Regular", Helvetica;
+  font-weight: 400;
+  color: #002452;
+  font-size: 60px;
+  letter-spacing: 0;
+  line-height: 60px;
+}
+@media (max-width: 1024px) {
+    
+}
+
+body { 
+  margin: 0 !important;
+}
