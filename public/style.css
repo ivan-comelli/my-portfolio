@@ -20,8 +20,8 @@
 }
 
 .intro .portrait { 
-  width: 80em;
-  height: 120em;
+  width: 90vw;
+  height: fit-content;
   margin-top: -10em;
   object-fit: cover;
 }
@@ -35,8 +35,6 @@
   color: #15376059;
   font-size: var(--font-size-sm);
   letter-spacing: 2px;
-  line-height: normal;
-  white-space: nowrap;
 }
 
 .info .your-name {
@@ -46,9 +44,7 @@
   font-weight: 700;
   color: #002452;
   font-size: var(--font-size-lg);
-  letter-spacing: 0;
-  line-height: 160px;
-  white-space: nowrap;
+  margin: 0;
 }
 
 .intro .portf {
@@ -58,9 +54,6 @@
   font-weight: 400;
   color: #002452;
   font-size: var(--font-size-md);
-  letter-spacing: 0;
-  line-height: 60px;
-  white-space: nowrap;
 }
 .intro .info {
   display: flex;
@@ -84,12 +77,14 @@
 
 .sheet {
   width: auto;
+  padding: 4em 2em;
 }
 
 .sheet .type {
   font-family: "Helvetica Neue-Regular", Helvetica;
   color: #ACACAC;
   font-size: var(--font-size-xsm);
+  margin: 0em 2em;
 }
 .sheet .header-title {
   font-family: "Helvetica Neue-Regular", Helvetica;
@@ -104,12 +99,14 @@
 }
 
 .sheet .block {
-  display: flex;
-  flex-wrap: wrap;
+  display: grid;
+  grid-template-columns: repeat(2, minmax(200px, 1fr));
+  grid-gap: 20px;
+  grid-auto-flow: row;
 }
 
 .section {
-  width: 50%;
+  width: auto;
 }
 
 .section .title { 
@@ -126,7 +123,7 @@
 }
 
 .section img {
-  width: 15em;
+  width: 16vw;
   height: fit-content;
 
 }
@@ -137,10 +134,77 @@
   font-size: var(--font-size-xsm);
 }
 
+.sheet.half {
+  display: grid;
+  grid-template-columns: 40vw 1fr;
+  padding: 0 !important;
+}
+
+.sheet .last img{
+  width: 100%;
+  height: fit-content;
+}
+
+.sheet .first {
+  gap: 20px;
+  display: flex;
+  flex-direction: column;
+  padding: 2em;
+  background-color: white;
+}
+
+.sheet .last {
+  display: flex;
+  align-items: center;
+  padding: 5em;
+}
+
+.sheet .stack {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+}
+
+.stack img:nth-child(1) {
+  position: relative;
+  right: 0;
+}
+
+.stack img:nth-child(2) {
+  position: relative;
+  right: 4vw;
+}
+
+.stack img:nth-child(3) {
+  position: relative;
+  right: 8vw;
+}
+
+.stack img:nth-child(4) {
+  position: relative;
+  right: 12vw;
+}
+
+.stack img {
+  width: 15vw !important;
+  height: fit-content !important;
+}
+
+.unique img {
+  width: 100%;
+}
+
+
 @media (max-width: 1024px) {
     
 }
 
 body { 
   margin: 0 !important;
+  background: #f4f4f4;
+}
+
+html {
+  overflow-x: hidden;
+
 }
