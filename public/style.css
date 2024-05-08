@@ -3,6 +3,11 @@
   --font-size-md: 3vw;
   --font-size-sm: 1.6vw;
   --font-size-xsm: 1vw;
+  --spacing-lg: 4vw;
+  --spacing-md: 3vw;
+  --spacing-sm: 2vw;
+  --spacing-xsm: 1vw;
+  --sizing-logo: 16vw;
 }
 
 .intro {
@@ -72,19 +77,19 @@
 }
 
 .info .title-header {
-  padding: 5em;
+  padding: var(--spacing-lg);
 }
 
 .sheet {
   width: auto;
-  padding: 4em 2em;
+  padding: var(--spacing-lg) var(--font-size-sm);
 }
 
 .sheet .type {
   font-family: "Helvetica Neue-Regular", Helvetica;
   color: #ACACAC;
   font-size: var(--font-size-xsm);
-  margin: 0em 2em;
+  margin: 0 var(--spacing-sm);
 }
 .sheet .header-title {
   font-family: "Helvetica Neue-Regular", Helvetica;
@@ -123,7 +128,7 @@
 }
 
 .section img {
-  width: 16vw;
+  width: var(--sizing-logo);
   height: fit-content;
 
 }
@@ -149,14 +154,14 @@
   gap: 20px;
   display: flex;
   flex-direction: column;
-  padding: 2em;
+  padding: var(--spacing-sm);
   background-color: white;
 }
 
 .sheet .last {
   display: flex;
   align-items: center;
-  padding: 5em;
+  padding: var(--spacing-lg);
 }
 
 .sheet .stack {
