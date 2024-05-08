@@ -194,9 +194,21 @@
   width: 100%;
 }
 
+.slider {
+  overflow: scroll;
+
+}
 
 @media (max-width: 1024px) {
-    
+  :root {
+    --font-size-lg: 8vw;
+    --font-size-md: 5vw;
+    --font-size-sm: 2.6vw;
+    --font-size-xsm: 3vw;
+  }
+  .sheet.half {
+    grid-template-columns: none;
+  }
 }
 
 body { 
@@ -204,7 +216,8 @@ body {
   background: #f4f4f4;
 }
 
-html {
-  overflow-x: hidden;
-
+body, html {
+  margin: 0;
+  padding: 0;
+  overflow-x: hidden; /* Evita que aparezca la barra de desplazamiento horizontal */
 }
