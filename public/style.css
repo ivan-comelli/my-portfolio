@@ -263,3 +263,7 @@ body, html {
     background: var(--first-color);
     color: white;
 }
+
+.book img {
+  width: 100%;
+}
