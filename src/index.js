@@ -3,6 +3,8 @@ import { Fancybox } from "@fancyapps/ui";
 import "@fancyapps/ui/dist/fancybox/fancybox.css";
 
 
-Fancybox.bind("[data-fancybox]", {
-    // Your custom options
+Fancybox.bind('[data-fancybox="sheet"]', {
+    Thumbs: {
+      type: false,
+    },
   });

@@ -1,6 +1,6 @@
 :root {
   --font-size-lg: 6vw;
-  --font-size-md: 3vw;
+  --font-size-md: 2.8vw;
   --font-size-sm: 1.6vw;
   --font-size-xsm: 1vw;
   --spacing-lg: 4vw;
@@ -8,6 +8,12 @@
   --spacing-sm: 2vw;
   --spacing-xsm: 1vw;
   --sizing-logo: 16vw;
+  --primary-color: white;
+  --secundary-color: #f2f2f2;
+  --first-color: #002452;
+  --font-color: #52575E;
+  --font-neutral-color: #ACACAC;
+  --divider-color: #EEEEEE;
 }
 
 .intro {
@@ -47,7 +53,7 @@
   width: fit-content;
   font-family: "Helvetica Neue-Bold", Helvetica;
   font-weight: 700;
-  color: #002452;
+  color: var(--first-color);
   font-size: var(--font-size-lg);
   margin: 0;
 }
@@ -57,7 +63,7 @@
   width: fit-content;
   font-family: "Helvetica Neue-Regular", Helvetica;
   font-weight: 400;
-  color: #002452;
+  color: var(--first-color);
   font-size: var(--font-size-md);
 }
 .intro .info {
@@ -82,35 +88,49 @@
 
 .sheet {
   width: auto;
-  padding: var(--spacing-lg) var(--font-size-sm);
+}
+
+.sheet .header {
+  padding: var(--spacing-sm) var(--font-size-md);
 }
 
 .sheet .type {
-  font-family: "Helvetica Neue-Regular", Helvetica;
-  color: #ACACAC;
+  font-family: "Helvetica Neue", Helvetica;
+  font-weight: 500;
+  letter-spacing: 0.1em;
+  color: var(--font-neutral-color);
   font-size: var(--font-size-xsm);
   margin: 0 var(--spacing-sm);
+  border-bottom: solid .2em var(--divider-color);
+  padding: 1em;
+  width: 35em;
 }
 .sheet .header-title {
   font-family: "Helvetica Neue-Regular", Helvetica;
   color: #002452;
   font-size: var(--font-size-md);
+
 }
 
 .sheet .header-description {
-  font-family: "Helvetica Neue-Light", Helvetica;
-  color: #002452;
+  font-family: "Helvetica Neue", Helvetica;
+  font-weight: 200;
+  color: var(--font-color);
   font-size: var(--font-size-sm);
+  letter-spacing: .05em;
 }
 
 .sheet .block {
-  display: grid;
-  grid-template-columns: repeat(2, minmax(200px, 1fr));
+  display: flex;
+  flex-wrap: nowrap;
   grid-gap: 20px;
   grid-auto-flow: row;
+  background: var(--secundary-color);
+  padding: var(--spacing-lg) 20vw;
 }
 
 .section {
+  padding: var(--spacing-xsm) var(--spacing-sm);
   width: auto;
 }
 
@@ -118,6 +138,7 @@
   font-family: "Helvetica Neue-Regular", Helvetica;
   color: #002452;
   font-size: var(--font-size-xsm);
+  text-transform: uppercase;
 }
 
 .section.logos {
@@ -134,9 +155,11 @@
 }
 
 .section .text-wrapper {
-  font-family: "Helvetica Neue-Regular", Helvetica;
-  color: #52575e;
-  font-size: var(--font-size-xsm);
+  font-family: "Helvetica Neue", Helvetica;
+    font-weight: 300;
+    color: var(--font-color);
+    font-size: var(--font-size-xsm);
+    letter-spacing: .04em;
 }
 
 .sheet.half {
@@ -151,11 +174,8 @@
 }
 
 .sheet .first {
-  gap: 20px;
   display: flex;
   flex-direction: column;
-  padding: var(--spacing-sm);
-  background-color: white;
 }
 
 .sheet .last {
@@ -168,27 +188,29 @@
   width: 100%;
   display: flex;
   justify-content: center;
+  gap: .1em;
+
 }
 
-.stack img:nth-child(1) {
-  position: relative;
-  right: 0;
+.stack a{
+  transition: width 3s cubic-bezier(0.99, -0.03, 0.53, 0.7);
 }
 
-.stack img:nth-child(2) {
-  position: relative;
-  right: 4vw;
+.stack a:not(:nth-child(3)){
+  overflow: hidden;
+  width: 10em;
 }
 
-.stack img:nth-child(3) {
-  position: relative;
-  right: 8vw;
+.stack a:nth-child(n+3) {
+  display: flex;
+  justify-content: flex-end;
 }
 
-.stack img:nth-child(4) {
-  position: relative;
-  right: 12vw;
+.stack a:hover{
+  width: fit-content;
 }
+
+
 
 .stack img {
   width: 15vw !important;
@@ -208,17 +230,24 @@
   :root {
     --font-size-lg: 8vw;
     --font-size-md: 5vw;
-    --font-size-sm: 2.6vw;
-    --font-size-xsm: 3vw;
+    --font-size-sm: 3.2vw;
+    --font-size-xsm: 2.6vw;
   }
   .sheet.half {
     grid-template-columns: none;
+  }
+  .sheet .block {
+    flex-wrap: wrap;
+    padding: var(--spacing-lg) 10vw;
+  }
+  .sheet .section {
+    padding: var(--spacing-sm) var(--spacing-md);
   }
 }
 
 body { 
   margin: 0 !important;
-  background: #f4f4f4;
+  background: var(--primary-color);
 }
 
 body, html {
