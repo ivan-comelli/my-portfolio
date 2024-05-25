@@ -19,22 +19,10 @@
 .intro {
   height: 100vh;
   background: #c4cbc7;
-}
-
-.intro .mask {
-  height: 100vh;
-  width: 100%;
-  overflow: hidden;
-  position: absolute;
-  display: flex;
-  justify-content: flex-end;
-}
-
-.intro .portrait { 
-  width: 90vw;
-  height: fit-content;
-  margin-top: -10em;
-  object-fit: cover;
+  background-image: url('portada.jpg'); /* Ruta a tu imagen */
+  background-size: cover; /* Escala la imagen para cubrir todo el contenedor */
+  background-position: center; /* Centra la imagen */
+  background-repeat: no-repeat;
 }
 
 .info .selected-work {
@@ -75,7 +63,6 @@
   box-shadow: 0 8px 32px 0 rgba(31, 38, 135, 0.37);
   backdrop-filter: blur(10px);
   -webkit-backdrop-filter: blur(20px);
-  border-radius: 10px;
   border: 1px solid rgba(255, 255, 255, 0.18);
   align-items: flex-start;
   justify-content: flex-end;
@@ -266,4 +253,10 @@ body, html {
 
 .book img {
   width: 100%;
+}
+
+@media only screen and (orientation: portrait) {
+  .intro {
+    height: 60vw;
+  }
 }
