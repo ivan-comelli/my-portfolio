@@ -123,8 +123,6 @@
 .sheet .block {
   display: flex;
   flex-wrap: nowrap;
-  grid-gap: 20px;
-  grid-auto-flow: row;
   background: var(--secundary-color);
   padding: var(--spacing-lg) 20vw;
 }
@@ -151,7 +149,6 @@
 .section img {
   width: var(--sizing-logo);
   height: fit-content;
-
 }
 
 .section .text-wrapper {
@@ -171,6 +168,8 @@
 .sheet .last img{
   width: 100%;
   height: fit-content;
+  box-shadow: 5px 3px 20px 0px rgba(0, 0, 0, 0.2);
+  border-radius: 1em;
 }
 
 .sheet .first {
