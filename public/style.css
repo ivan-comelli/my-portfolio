@@ -7,7 +7,8 @@
   --spacing-md: 3vw;
   --spacing-sm: 2vw;
   --spacing-xsm: 1vw;
-  --sizing-logo: 16vw;
+  --sizing-logo: 8vw;
+  --sizing-logo-sm: 6vw;
   --primary-color: white;
   --secundary-color: #f2f2f2;
   --first-color: #002452;
@@ -155,7 +156,7 @@
 .sheet .last img{
   width: 100%;
   height: fit-content;
-  box-shadow: 5px 3px 20px 0px rgba(0, 0, 0, 0.2);
+  box-shadow: 0 0 11px 3px rgba(0, 0, 0, 0.2);
   border-radius: 1em;
 }
 
@@ -170,7 +171,16 @@
   flex-direction: column;
   gap: var(--spacing-md);
   padding: var(--spacing-lg);
+  justify-content: center;
 }
+
+.sheet .last .item {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+
 
 .sheet .stack {
   width: 100%;
@@ -198,6 +208,9 @@
   width: fit-content;
 }
 
+.col {
+  width: 100%;
+}
 
 
 .stack img {
@@ -220,6 +233,8 @@
     --font-size-md: 5vw;
     --font-size-sm: 3.2vw;
     --font-size-xsm: 2.6vw;
+    --sizing-logo: 22vw;
+    --sizing-logo-sm: 20vw;
   }
   .sheet.half {
     grid-template-columns: none;
@@ -251,12 +266,39 @@ body, html {
     color: white;
 }
 
-.book img {
-  width: 100%;
-}
-
 @media only screen and (orientation: portrait) {
   .intro {
     height: 60vw;
   }
+}
+
+.links {
+  display: flex;
+  justify-content: center;
+}
+
+.figma-logo {
+  width: var(--sizing-logo-sm) !important;
+}
+
+.links a {
+  display: flex;
+  align-items: center;
+}
+
+.sheet .last caption {
+  width: 100%;
+}
+
+.sheet .caption {
+  font-family: "Helvetica Neue", Helvetica;
+  font-weight: 300;
+  color: var(--font-color);
+  font-size: var(--font-size-xsm);
+  letter-spacing: 0.25em;
+  width: 75%;
+  text-align: center;
+  margin-top: 2em;
+  padding-top: 1em;
+  border-top: solid .1em black;
 }
