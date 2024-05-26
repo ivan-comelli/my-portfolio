@@ -80,7 +80,7 @@
 }
 
 .sheet .header {
-  padding: var(--spacing-sm) var(--font-size-md);
+  padding: var(--spacing-sm) var(--font-size-md) 0;
 }
 
 .sheet .type {
