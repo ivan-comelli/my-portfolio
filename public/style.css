@@ -19,6 +19,7 @@
 
 .intro {
   height: 100vh;
+  min-height: 30em;
   background: #c4cbc7;
   background-image: url('portada.jpg'); /* Ruta a tu imagen */
   background-size: cover; /* Escala la imagen para cubrir todo el contenedor */
@@ -229,12 +230,12 @@
 
 @media (max-width: 1024px) {
   :root {
-    --font-size-lg: 8vw;
-    --font-size-md: 5vw;
-    --font-size-sm: 3.2vw;
-    --font-size-xsm: 2.6vw;
-    --sizing-logo: 22vw;
-    --sizing-logo-sm: 20vw;
+    --font-size-lg: 6vw;
+    --font-size-md: 3vw;
+    --font-size-sm: 2.2vw;
+    --font-size-xsm: 1.6vw;
+    --sizing-logo: 20vw;
+    --sizing-logo-sm: 18vw;
   }
   .sheet.half {
     grid-template-columns: none;
@@ -245,6 +246,17 @@
   }
   .sheet .section {
     padding: var(--spacing-sm) var(--spacing-md);
+  }
+}
+
+@media (max-width: 768px) {
+  :root {
+    --font-size-lg: 8vw;
+    --font-size-md: 5vw;
+    --font-size-sm: 3.2vw;
+    --font-size-xsm: 2.6vw;
+    --sizing-logo: 22vw;
+    --sizing-logo-sm: 20vw;
   }
 }
 
