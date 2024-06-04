@@ -20,7 +20,7 @@
 .intro {
   height: 100vh;
   min-height: 30em;
-  background: #c4cbc7;
+  background: var(--secundary-color);
   background-image: url('portada.jpg'); /* Ruta a tu imagen */
   background-size: auto; /* Escala la imagen para cubrir todo el contenedor */
   background-position: center; /* Centra la imagen */
