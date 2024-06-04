@@ -22,7 +22,7 @@
   min-height: 30em;
   background: #c4cbc7;
   background-image: url('portada.jpg'); /* Ruta a tu imagen */
-  background-size: cover; /* Escala la imagen para cubrir todo el contenedor */
+  background-size: auto; /* Escala la imagen para cubrir todo el contenedor */
   background-position: center; /* Centra la imagen */
   background-repeat: no-repeat;
 }
@@ -253,6 +253,9 @@
   }
   .sheet .section {
     padding: var(--spacing-sm) var(--spacing-md);
+  }
+  .intro {
+    background-size: cover !important;
   }
 }
 
