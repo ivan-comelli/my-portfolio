@@ -1,5 +1,5 @@
 import { Fancybox } from "@fancyapps/ui";
-import { Analytics } from "@vercel/analytics/react"
+import { inject } from "@vercel/analytics"
 
 import "@fancyapps/ui/dist/fancybox/fancybox.css";
 
